@@ -157,7 +157,7 @@ tensorboard可读文件包含以下内容:
 
 ![image](pic/jittor_loss.png)
 
-！[image](pic/jittor_loss_avg.png)
+![image](pic/jittor_loss_avg.png)
 
 ![image](pic/jittor_lr.png)
 ***
@@ -170,7 +170,7 @@ tensorboard可读文件包含以下内容:
 #### 图片
 ![image](pic/pytorch_loss.png)
 
-！[image](pic/pytorch_loss_avg.png)
+![image](pic/pytorch_loss_avg.png)
 
 
 
