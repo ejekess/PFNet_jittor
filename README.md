@@ -1,6 +1,6 @@
 # CVPR2021_PFNet (Jittor Implementation)
 
-## introduction
+## 介绍
 
 该仓库提供了 **PFNet** 的推理代码，使用了 [Jittor 深度学习框架](https://github.com/Jittor/jittor)。
 
