@@ -95,7 +95,7 @@ python  train.py
 注意事项:
 + Jittor框架下的PFNet模型用本地设备4080Laptop来训练的，所以默认为单卡，如果使用多卡,请配置多卡运行依赖OpenMPI(参考[官方文档](https://cg.cs.tsinghua.edu.cn/jittor/tutorial/2020-5-2-16-44-distributed/))
 
-+ 指定特定显卡的多卡训练脚本如下:
++ 指定特定显卡的多卡训练示例脚本如下:
 ```shell
 CUDA_VISIBLE_DEVICES="2,3" mpirun -np 2 python -m train.py
 ```
@@ -111,11 +111,13 @@ jt.gc()
 
 
 ## 测试脚本
-加载预训练模型,请去原项目地址下载[PFNet.pth](https://github.com/Mhaiyang/CVPR2021_PFNet/blob/main/README.md)
+加载预训练模型,请去原项目地址下载[PFNet.pth](https://github.com/Mhaiyang/CVPR2021_PFNet/blob/main/README.md) 提取码: v3xu
 
 提供我按照args原参数复现的Jittor框架下的模型**45.pkl**
 
 提供同样训练的Pytorch框架下的**45.pth**(由于pytorch框架下设备能力有限,出现设备过热导致关机,所以我是用采用类似于断点训练的方式,每5轮保存训练模型,然后更改args参数的last_epoch,snapshot和save_point继续下5轮训练直到完成了45轮的训练)
+
+以上两个模型的[百度网盘链接](https://pan.baidu.com/s/1_b7srMAbK_CJuCJStjxpGw) 
 
 测试的文件入口是**test.py**, 正确配置**config.py**中测试数据集所在目录,然后在该文件根目录下,通过以下脚本启动训练:
 ```shell
@@ -129,7 +131,7 @@ python test.py
 每批次的loss值会自动记录在tensorboard文件中 
 
 #### log文件说明
-完全按照原项目的参数训练完45轮, 并且所有批次的log记录在[txt文档](ckpt_jittor/PFNet/2025-07-18-12-38-37-217476.txt)中
+完全按照原项目的参数训练完45轮, 并且所有批次的log会自动记录在txt文档中
 文件格式如下:
 ```
 # 第一行保存模型训练的参数
@@ -164,8 +166,7 @@ tensorboard可读文件包含以下内容:
 
 ### Pytorch
 
-提供Pyrorch框架下自训练模型**45.pth**的记录,在[./ckpt_pytorch/PFNet)](./ckpt_pytorch/PFNet)下
-该模型采用断点训练,每5轮后保存,然后在该基础上继续加载直至完成45轮
+提供Pyrorch框架下自训练模型**45.pth**的记录,该模型采用断点训练,每5轮后保存,然后在该基础上继续加载直至完成45轮
 
 #### 图片
 ![image](pic/pytorch_loss.png)
