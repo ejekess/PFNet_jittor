@@ -1,6 +1,6 @@
 # CVPR2021_PFNet (Jittor Implementation)
 
-## introduction
+## 介绍
 
 该仓库提供了 **PFNet** 的推理代码，使用了 [Jittor 深度学习框架](https://github.com/Jittor/jittor)。
 
@@ -157,7 +157,7 @@ tensorboard可读文件包含以下内容:
 
 ![image](pic/jittor_loss.png)
 
-！[image](pic/jittor_loss_avg.png)
+![image](pic/jittor_loss_avg.png)
 
 ![image](pic/jittor_lr.png)
 ***
@@ -170,7 +170,7 @@ tensorboard可读文件包含以下内容:
 #### 图片
 ![image](pic/pytorch_loss.png)
 
-！[image](pic/pytorch_loss_avg.png)
+![image](pic/pytorch_loss_avg.png)
 
 
 
@@ -181,7 +181,7 @@ tensorboard可读文件包含以下内容:
 
 ![lr_compare.png](pic/lr_compare.png)
 
-Pytorch和Jittor两个框架下的loss和log的tensorboard文件可以通过该[百度网盘链接](https://pan.baidu.com/s/1mpSf_5dc66wFj8_76n9NAw)获取 提取码: rzrg
+自主训练的Pytorch和Jittor两个框架下的loss和log的tensorboard文件可以通过该[百度网盘链接](https://pan.baidu.com/s/1mpSf_5dc66wFj8_76n9NAw)获取 提取码: rzrg
 
 
 
@@ -233,3 +233,23 @@ Pytorch和Jittor两个框架下的loss和log的tensorboard文件可以通过该[
 
 ### 预测数据集
 该[百度网盘](https://pan.baidu.com/s/1hxe8St9D-nNiRDSEw8suKQ?pwd=pz1k)提供Jittor(45.pkl) ,Jittor(PFNet.th),Pytorch(45.pth) 分别在3个测试数据集的预测结果,提取码: pz1k
+
+
+## 致谢
+
+本仓库为论文 [Camouflaged Object Segmentation With Distraction Mining (CVPR 2021)] 的代码框架转换版本。  
+原始代码及方法均来自原作者，特此致谢。
+
+如果您使用了本项目，请引用原始论文：
+@InProceedings{Mei_2021_CVPR,
+    author    = {Mei, Haiyang and Ji, Ge-Peng and Wei, Ziqi and Yang, Xin and Wei, Xiaopeng and Fan, Deng-Ping},
+    title     = {Camouflaged Object Segmentation With Distraction Mining},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {8772-8781}
+}
+
+
+## License
+请见 license.txt
