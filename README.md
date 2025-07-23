@@ -241,6 +241,7 @@ tensorboard可读文件包含以下内容:
 原始代码及方法均来自原作者，特此致谢。
 
 如果您使用了本项目，请引用原始论文：
+```
 @InProceedings{Mei_2021_CVPR,
     author    = {Mei, Haiyang and Ji, Ge-Peng and Wei, Ziqi and Yang, Xin and Wei, Xiaopeng and Fan, Deng-Ping},
     title     = {Camouflaged Object Segmentation With Distraction Mining},
@@ -249,7 +250,7 @@ tensorboard可读文件包含以下内容:
     year      = {2021},
     pages     = {8772-8781}
 }
-
+```
 
 ## License
 请见 license.txt
