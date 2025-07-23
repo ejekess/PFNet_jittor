@@ -181,7 +181,7 @@ tensorboard可读文件包含以下内容:
 
 ![lr_compare.png](pic/lr_compare.png)
 
-Pytorch和Jittor两个框架下的loss和log的tensorboard文件可以通过该[百度网盘链接](https://pan.baidu.com/s/1mpSf_5dc66wFj8_76n9NAw)获取 提取码: rzrg
+自主训练的Pytorch和Jittor两个框架下的loss和log的tensorboard文件可以通过该[百度网盘链接](https://pan.baidu.com/s/1mpSf_5dc66wFj8_76n9NAw)获取 提取码: rzrg
 
 
 
