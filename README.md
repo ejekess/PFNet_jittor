@@ -111,13 +111,13 @@ jt.gc()
 
 
 ## 测试脚本
-加载预训练模型,请去原项目地址下载[PFNet.pth](https://github.com/Mhaiyang/CVPR2021_PFNet/blob/main/README.md) 提取码: v3xu
+加载预训练模型,请去原项目地址下载[PFNet.pth](https://github.com/Mhaiyang/CVPR2021_PFNet/blob/main/README.md) 
 
 提供我按照args原参数复现的Jittor框架下的模型**45.pkl**
 
 提供同样训练的Pytorch框架下的**45.pth**(由于pytorch框架下设备能力有限,出现设备过热导致关机,所以我是用采用类似于断点训练的方式,每5轮保存训练模型,然后更改args参数的last_epoch,snapshot和save_point继续下5轮训练直到完成了45轮的训练)
 
-以上两个模型的[百度网盘链接](https://pan.baidu.com/s/1_b7srMAbK_CJuCJStjxpGw) 
+以上两个模型的[百度网盘链接](https://pan.baidu.com/s/1_b7srMAbK_CJuCJStjxpGw)  提取码: v3xu
 
 测试的文件入口是**test.py**, 正确配置**config.py**中测试数据集所在目录,然后在该文件根目录下,通过以下脚本启动训练:
 ```shell
